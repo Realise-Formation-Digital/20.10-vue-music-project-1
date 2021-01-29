@@ -5,8 +5,32 @@ import vuetify from "./plugins/vuetify";
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter)
+const routes = [
+  { path: "/", components: home 
+
+  },
+
+  { path: "/about", components: about 
+
+ },
+
+{ path: "/video", components: video 
+
+ }, 
+];
+const router = new VueRouter ({
+  routes: routes,
+  mode: "history",
+
+
+
+}
+
+);
+
 
 new Vue({
   vuetify,
+  router,
   render: (h) => h(App),
 }).$mount("#app");
