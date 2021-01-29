@@ -1,0 +1,1 @@
+npm install && npx --ignore-existing --package @vue/cli vue create --default .

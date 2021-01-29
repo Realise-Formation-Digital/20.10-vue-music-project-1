@@ -1,20 +1,23 @@
 import Vue from "vue";
 import App from "./App.vue";
-import VueRouter from "vue-router";
 import vuetify from "./plugins/vuetify";
+import VueRouter from "vue-router";
 import home from "./components/home";
 import about from "./components/about";
 import video from "./components/video";
 
-Vue.config.productionTip = false;
 Vue.use(VueRouter);
+
+Vue.config.productionTip = false;
+
 const routes = [
-  { path: "/", components: home },
-  { path: "/about", components: about },
-  { path: "/video", components: video },
+  { path: "/", component: home },
+  { path: "/about", component: about },
+  { path: "/video", component: video },
 ];
+
 const router = new VueRouter({
-  routes: routes,
+  routes: routes, // short for `routes: routes`
   mode: "history",
 });
 

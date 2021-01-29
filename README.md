@@ -1,4 +1,4 @@
-# vue-music-project
+# test-vue-install
 
 ## Project setup
 ```
