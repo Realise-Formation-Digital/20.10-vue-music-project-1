@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <v-main>
-      <bottomnavbar></bottomnavbar>
       <hr color="black" />
       <router-view></router-view>
     </v-main>
+    <bottomnavbar/>
   </v-app>
 </template>
 
