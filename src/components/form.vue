@@ -8,11 +8,11 @@
 
     </v-text-field>
 
-    <v-select v-model="select" :items="items" :rules="[v => !!v || 'Item is required']" label=" Item" required>
+    <v-select v-model="select" :items="items" :rules="[v => !!v || 'Item is required']" label=" Motif" required>
 
     </v-select>
 
-    <v-checkbox v-model="checkbox" :rules="[v => !!v || 'You must agree to continue!']" label=" Do you agree?" required>
+    <v-checkbox v-model="checkbox" :rules="[v => !!v || 'You must agree to continue!']" label=" Cochez la case pour certifiez que vous êtes d'accord qu'on vous écoute 24h sur 24." required>
 
     </v-checkbox>
 
@@ -22,10 +22,6 @@
 
     <v-btn color="error" class="mr-4" @click="reset">
       Reset Form
-    </v-btn>
-
-    <v-btn color="warning" @click="resetValidation">
-      Reset Validation
     </v-btn>
   </v-form>
 </template>
@@ -47,10 +43,10 @@ export default {
     ],
     select: null,
     items: [
-      'Item 1',
-      'Item 2',
-      'Item 3',
-      'Item 4',
+      'Informations sur les horaires d\'ouverture des bureaux',
+      'Reçevoir une alerte sur les nouveaux titres disponible par mail',
+      'Informations sur comment racheter l\'entreprise en cas de failite',
+      'Recevoir une alerte sur les offres d\'emploi disponible par mail',
     ],
     checkbox: false,
   }),
@@ -58,12 +54,17 @@ export default {
   methods: {
     validate () {
       this.$refs.form.validate()
+
+      //this.select
+      alert("Reçu avec succès! ")
+      this.$refs.form.resetValidation()
+      this.$refs.form.reset()
+
+      // this.select = null
+      //this.checkbox = null
     },
     reset () {
       this.$refs.form.reset()
-    },
-    resetValidation () {
-      this.$refs.form.resetValidation()
     },
   },
 }
