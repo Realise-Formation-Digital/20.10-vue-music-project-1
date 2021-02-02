@@ -10,12 +10,10 @@
           ></v-col
         >
         <v-col>
-          <router-link class="text-decoration-none" to="/about"
-            ><v-btn block text class=" white--text" color="deep-purple"
-              >About Us</v-btn
-            ></router-link
-          ></v-col
-        >
+          <router-link class="text-decoration-none" to="/about">
+            <v-btn block text class=" white--text" color="deep-purple">About Us</v-btn>
+          </router-link>
+        </v-col>
         <v-col>
           <router-link class="text-decoration-none" to="/video"
             ><v-btn block text class=" white--text" color="deep-purple"
