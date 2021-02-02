@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <v-main>
-      <hr color="black" />
       <router-view></router-view>
     </v-main>
     <bottomnavbar/>
