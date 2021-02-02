@@ -25,7 +25,11 @@
         ></v-row
       >
       <hr color="black" />
-      <router-view></router-view>
+
+
+      <router-view>
+
+      </router-view>
     </v-main>
   </v-app>
 </template>
