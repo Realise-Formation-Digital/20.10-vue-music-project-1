@@ -8,14 +8,13 @@
 </template>
 
 <script>
-  import { mdbNavbar, mdbNavbarBrand, mdbInput} from 'mdbvue';
   export default {
-    name: 'topNavBar',
-    components: {
-      mdbNavbar,
-      mdbNavbarBrand,
-      mdbInput
+  name: "topnavbar",
+  data() {
+    return {
+
     }
   }
+}
 </script>
 
