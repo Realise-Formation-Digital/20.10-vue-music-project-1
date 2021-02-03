@@ -3,7 +3,7 @@
       v-model="value"
       :background-color="color"
       shift
-      fixed
+
   >
     <v-btn to="/" icon flat depressed>
       <v-icon>mdi-home-outline</v-icon>
