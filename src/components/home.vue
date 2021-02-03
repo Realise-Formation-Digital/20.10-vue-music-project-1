@@ -1,17 +1,23 @@
 <template>
-  <div>
 
-        <v-container fluid>
-<!--- début de la card <--->
-        <v-card width="750px">
+<v-row
+align="center"
+justify="center"
+>
+  <v-col cols="1"/>
+  <v-col cols="10"
+  align="center"
+justify="center"
+>
+      <!--- début de la card <--->
+        <v-card width="80%">
 
 <!--- titre <--->
         <h1><center><b> Welcome </b></center></h1>
 
 <!--- carousel <--->
-        <v-carousel
+        <v-carousel 
     cycle
-    
     height="600"
     hide-delimiter-background
     show-arrows-on-hover
@@ -31,7 +37,7 @@
         >
           <div class="display-1">
             {{ slide }} Slide
-            
+              
           </div>
         </v-row>
       </v-sheet>
@@ -48,9 +54,12 @@
 
 
   </v-card> 
-</v-container>
-</div>
-  </template>
+  </v-col>
+  <v-col cols="1"/>
+
+</v-row>
+
+</template>
   
 <script>
 export default {
@@ -80,6 +89,7 @@ export default {
 </script>
 
 <style scoped>
+
 
 </style>
 

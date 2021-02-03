@@ -1,6 +1,5 @@
 <template>
-  <v-app>
-    <v-main>
+  <div>
       <v-card class=text-center>
       <v-card-title class="justify-center" id="title">Qui sommes nous ?</v-card-title>
       <p>Une team d'amoureux de la mayonnaise réuni autour d'une seul idée : Réunir leurs passion pour la vidéo et la mayo en un seul projet ! <br>
@@ -19,8 +18,7 @@
           src="../assets/adresseMayoTube.png"
       ></v-img>
       </a>
-    </v-main>
-  </v-app>
+  </div>
 
 
 </template>

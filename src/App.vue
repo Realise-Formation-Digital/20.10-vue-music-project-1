@@ -1,38 +1,50 @@
 <template>
   <v-app>
+    <topnavbar/>
     <v-main>
-      <v-row>
-        <v-col>
-          <router-link class="text-decoration-none" to="/">
-            <v-btn block text class=" white--text" color="deep-purple">Home</v-btn>
-          </router-link>
-        </v-col>
-        <v-col>
-          <router-link class="text-decoration-none" to="/about">
-            <v-btn block text class=" white--text" color="deep-purple">About Us</v-btn>
-          </router-link>
-        </v-col>
-        <v-col>
-          <router-link class="text-decoration-none" to="/video">
-            <v-btn block text class=" white--text" color="deep-purple">Video</v-btn>
-          </router-link>
-        </v-col>
-      </v-row>
-      <hr color="black"/>
+        <v-card
+    color="grey lighten-4"
+    flat
+    tile
+  >
+    <v-toolbar dense>
+    <v-avatar>
+      <img
+        src="./assets/MayoTube-logo.png"
+        alt="icon MayoTube"
+      >
+    </v-avatar>
+      <v-toolbar-title>MayoTube</v-toolbar-title>
 
+      <v-spacer></v-spacer>
+              
 
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+    </v-toolbar>
+  </v-card>
+  <v-container fluid
+              fill-height>
       <router-view>
 
       </router-view>
+              </v-container>
+                  <bottomnavbar/>
+
     </v-main>
-    <bottomnavbar/>
   </v-app>
 </template>
 
 <script>
 import bottomnavbar from './components/bottomnavbar.vue';
+import topnavbar from './components/topnavbar.vue';
+
+
 export default {
-  components: { bottomnavbar },
+  components: { bottomnavbar, topnavbar},
+
+
   name: "App",
 
   data: () => ({
