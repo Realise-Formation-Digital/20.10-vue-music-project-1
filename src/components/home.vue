@@ -1,8 +1,4 @@
 <template>
-  <div>
-
-        <v-container fluid>
-
 
 <v-row
 align="center"
@@ -63,9 +59,7 @@ justify="center"
 
 </v-row>
 
-</v-container>
-</div>
-  </template>
+</template>
   
 <script>
 export default {
