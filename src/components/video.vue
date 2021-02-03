@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <template>
   <div>
 
@@ -36,6 +37,15 @@
 <script>
   
 const axios = require ("axios");
+=======
+<template><div>
+  <v-btn @click="video">Boom</v-btn>
+</div> </template>
+
+<script>
+const axios = require('axios');
+
+>>>>>>> Stashed changes
 export default {
   name: "video",
   props: {},
@@ -44,6 +54,7 @@ export default {
       tracksFetched: []
     };
   },
+<<<<<<< Updated upstream
 
   methods: {
     async player() {
@@ -58,6 +69,21 @@ export default {
     }
   }
 };
+=======
+  methods: {
+    async video () {
+      try {
+        console.log("test1")
+        const response = await axios.get('https://cors-anywhere.herokuapp.com/https://openwhyd.org/hot/electro?format=json');
+        console.log(response);
+      }catch (e) {
+        console.log("Error", e)
+
+      }
+      }
+    }
+  };
+>>>>>>> Stashed changes
 </script>
 
 <style scoped></style>
