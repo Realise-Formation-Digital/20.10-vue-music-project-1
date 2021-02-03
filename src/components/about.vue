@@ -11,7 +11,10 @@
         </p>
       </v-card>
       <h1>Formulaire de contact</h1>
+      <v-card>
       <Form></Form>
+      </v-card>
+      <v-card>
       <h1 id="where"> Où sommes nous ?</h1>
       <v-row>
         <v-col cols="1"></v-col>
@@ -26,7 +29,7 @@
         </v-col>
         <v-col cols="1"></v-col>
       </v-row>
-
+      </v-card>
 
 
 
