@@ -11,7 +11,7 @@ Vue.use(VueRouter);
 Vue.config.productionTip = false;
 
 const routes = [
-  { path: "/", component: home },
+  { path: "/home", component: home },
   { path: "/about", component: about },
   { path: "/video", component: video },
 ];

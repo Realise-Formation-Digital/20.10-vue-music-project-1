@@ -5,16 +5,16 @@
       shift
 
   >
-    <v-btn to="/" icon flat depressed>
+    <v-btn to="/home" icon flat depressed>
       <v-icon>mdi-home-outline</v-icon>
     </v-btn>
 
     <v-btn to="/about" icon flat depressed>
-      <v-icon>mdi-music-note</v-icon>
+      <v-icon>mdi-account-group</v-icon>
     </v-btn>
 
     <v-btn to="/video" icon flat depressed>
-      <v-icon>mdi-book</v-icon>
+      <v-icon>mdi-play</v-icon>
     </v-btn>
   </v-bottom-navigation>
 
@@ -33,6 +33,7 @@ export default {
 <style lang="css" scoped>
 .theme--light.v-bottom-navigation[data-v-16edf6ea][data-v-16edf6ea] {
     background-color: #eeeeee
+    
 }
 .v-btn > .v-btn__content .v-icon {
  background: #dde1e7;

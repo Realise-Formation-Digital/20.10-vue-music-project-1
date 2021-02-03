@@ -3,18 +3,18 @@
     <topnavbar/>
     <v-main>
         <v-card
-    color="grey lighten-4"
+    color="#dde1e7"
     flat
     tile
   >
     <v-toolbar dense>
-    <v-avatar>
+    <v-avatar size="182">
       <img
-        src="./assets/MayoTube-logo.png"
+        src="./assets/MayoTube-logo-sample-3.png"
         alt="icon MayoTube"
       >
     </v-avatar>
-      <v-toolbar-title>MayoTube</v-toolbar-title>
+
 
       <v-spacer></v-spacer>
               
