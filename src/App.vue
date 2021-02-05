@@ -11,8 +11,7 @@
     <v-avatar size="182">
       <img
         src="./assets/MayoTube-logo-sample-3.png"
-        alt="icon MayoTube"
-      >
+        alt="icon MayoTube">
     </v-avatar>
 
 
@@ -38,11 +37,10 @@
 
 <script>
 import bottomnavbar from './components/bottomnavbar.vue';
-import topnavbar from './components/topnavbar.vue';
 
 
 export default {
-  components: { bottomnavbar, topnavbar},
+  components: { bottomnavbar},
 
 
   name: "App",
